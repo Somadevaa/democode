@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+class Main {
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        int a = sc.nextInt();
+        while(a!=1 && a!=4)
+        {
+            int sum=0;
+            while(a>0){
+                int digit = a%10;
+                sum+=digit*digit;
+                a/=10;
+            }
+            a=sum;
+        }
+        if(a==1)
+        System.out.println("This is a Happy no");
+        else
+        System.out.println("No this is not a Happy no ");
+        
+        
+    }
+}
