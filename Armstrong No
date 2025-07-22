@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+class Main {
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        int a = sc.nextInt();
+        int sum=0;
+        int temp=a;
+        while(a>0){
+            int digit = a%10;
+            sum+=digit*digit*digit;
+            a/=10;
+        }
+        if(temp== sum)
+        System.out.println("This is a Armstrong No");
+        else
+        System.out.println("No this is not a Armstrong No");
+            
+        }
+        
+        
+    
+}
