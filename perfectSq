@@ -1,0 +1,13 @@
+import java.util.*;
+public class perfectSq{
+    public static void main(String[] args){
+        Scanner sc =new Scanner(System.in);
+        int a = sc.nextInt();
+        boolean hi= false;
+        for(int i=1;i*i<a;i++){
+            if(i*i==a)
+            hi=true;
+        }
+        System.out.println(hi?"PerfectSq":"not a perfect square");
+    }
+}
