@@ -14,9 +14,9 @@ public class StrongNo {
             a/=10;
         }
         if(sum==temp)
-        System.out.println("StringNo");
+        System.out.println("StrongNo");
         else
-        System.out.println("Not a StringNo");
+        System.out.println("Not a StrongNo");
 
 
     }
