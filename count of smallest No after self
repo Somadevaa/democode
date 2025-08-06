@@ -1,0 +1,18 @@
+class Solution
+{
+    public List<Integer> countSmaller(int[] nums)
+    {
+        ArrayList<Integer> ls=new ArrayList<>();
+        int len=nums.length;
+        int max=nums[0];
+        int count=0;
+        for(int i=1; i<len; i++)
+        {
+            if(max>nums[i])
+            {
+                count++
+            }
+        }
+        return ls;
+    }
+}
