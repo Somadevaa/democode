@@ -1,0 +1,36 @@
+public class armstrong {
+    public static int count(int number){
+        int count=0;
+        while(number>0){
+            number/=10;
+            count++;
+        }
+        return count;
+
+    }
+    public static int pow(int number,int count){
+        int prod =1;
+        for(int i=0;i<count;i++){
+            prod*=number;
+        }
+        return prod;
+    }
+    public static boolean arm(int number){
+        int tem=number;
+        int sum=0;
+        int c=count(number);
+        while(number>0){
+            int d=number%10;
+            sum+=pow(d,c);
+            number/=10;
+
+        }
+        return sum==tem;
+    }
+    public static void main (String [] args){
+        System.out.println(arm(1634));
+    }
+
+
+    }
+
