@@ -78,3 +78,23 @@ def maxi(arr):
     return ma
 m = [10, 20, 30, 99]
 print(maxi(m))
+def rotateleft(arr,k):
+    l=len(arr)
+    rot =[0]*l
+    for i in range l:
+        rot[i]=arr[(i+k) %l]
+        return rot
+arr= [1, 2, 3, 4, 5]
+print(rotateleft())
+[3, 4, 5, 1, 2]
+
+def rotateright(arr,k):
+    l=len(arr)
+    rot =[0]*l
+    for i in range (l):
+        rot[(i+k) %l]=arr[i]
+    return rot
+arr= [1, 2, 3, 4, 5]
+print(rotateright(arr,2))
+[4, 5, 1, 2, 3]
+
