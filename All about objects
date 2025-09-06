@@ -1,0 +1,47 @@
+class Car {
+    String name;
+    String colour;
+    String cmp;
+
+    public void start() {
+        System.out.println("Started");
+    }
+
+    public void stop() {
+        System.out.println("Stoped");
+    }
+
+    public Car(String var1, String var2, String var3) {
+        this.name = var1;
+        this.colour = var2;
+        this.cmp = var3;
+    }
+
+    public Car() {
+        this.name = "gaja";
+        this.colour = "kolo";
+        this.cmp = "hp";
+    }
+
+    public void detail() {
+        System.out.println("name" + this.name);
+        System.out.println("colour" + this.colour);
+        System.out.println("company" + this.cmp);
+    }
+}
+
+
+
+
+
+public class obj {
+    public obj() {
+    }
+
+    public static void main(String[] var0) {
+        Car var1 = new Car("bo", "white", "kello");
+        var1.detail();
+        Car var2 = new Car();
+        var2.detail();
+    }
+}
