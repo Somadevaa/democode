@@ -45,3 +45,41 @@ public class obj {
         var2.detail();
     }
 }
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+public class student {
+String name;
+double marks;
+int rollno;
+student(String name,double marks,int rollno){
+    this.name=name;
+    this.marks=marks;
+    this.rollno=rollno;
+
+}
+public void details(){
+    System.out.println("***********************");
+    System.out.println("name "+name);
+    System.out.println("marks "+marks);
+    System.out.println("rollno "+rollno);
+
+}
+}
+
+
+
+
+public class school {
+    public static void main(String[] args){
+        student s1 =new student("Tabarez",100,1);
+        student s2=new student("pranav",99,2);
+        student s3=new student("nagaraj",90,3);
+        student s4=new student("shantanu",89,4);
+        student [] Student={s1,s2,s3,s4};
+        for(int i=0;i<Student.length;i++){
+            if(Student[i].marks>90){
+                Student[i].details();
+            }
+        }
+    }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
