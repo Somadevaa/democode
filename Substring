@@ -1,0 +1,7 @@
+public class Subst {
+    public static void main(String [] args){
+        String s= "Java Script";
+        String ans1=s.substring(0,8);
+        System.out.println(ans1);
+    }
+}
