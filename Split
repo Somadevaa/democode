@@ -1,0 +1,12 @@
+import java.util.*;
+public class Split {
+    public static void main(String [] args){
+        String s="Hi This is Tabarez";
+        String [] arr=s.split(" ");
+        String [] arr1=s.split("");
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr1));
+
+    }
+
+}
