@@ -83,3 +83,70 @@ public class school {
     }
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// BankAccount.java
+public class BankAccount {
+    // private variables
+    private String accountNumber;
+    private String accountHolder;
+    private double balance;
+
+    // Constructor
+    public BankAccount(String accountNumber, String accountHolder, double balance) {
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = balance;
+    }
+
+    // Getter for accountNumber (read-only)
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    // Getter & Setter for accountHolder (read & write)
+    public String getAccountHolder() {
+        return accountHolder;
+    }
+
+    public void setAccountHolder(String accountHolder) {
+        this.accountHolder = accountHolder;
+    }
+
+    // Getter & Setter for balance (read & write)
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+}
+
+
+// BankApp.java
+public class BankApp {
+    public static void main(String[] args) {
+        BankAccount acc = new BankAccount("ACC12345", "Somadevaa", 5000.0);
+
+        // Read-only account number
+        System.out.println("Account Number: " + acc.getAccountNumber());
+
+        // Read & write account holder
+        System.out.println("Account Holder: " + acc.getAccountHolder());
+        acc.setAccountHolder("Soma D");
+        System.out.println("Updated Holder: " + acc.getAccountHolder());
+
+        // Read & write balance
+        System.out.println("Balance: " + acc.getBalance());
+        acc.setBalance(8000.0); // directly setting new balance
+        System.out.println("Updated Balance: " + acc.getBalance());
+    }
+}
+
+
+
+Account Number: ACC12345
+Account Holder: Somadevaa
+Updated Holder: Soma D
+Balance: 5000.0
+Updated Balance: 8000.0
+
